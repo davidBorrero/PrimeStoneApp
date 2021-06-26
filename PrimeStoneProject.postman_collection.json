@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "b4edb4f8-3160-48e0-8eee-e9e9d91def73",
+		"name": "PrimeStoneProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TaskCRUD",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Estudiar Java\",\r\n    \"description\":\"Hay que hacer el curso de Java\",\r\n    \"state\":\"new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://primestoneproject-default-rtdb.firebaseio.com/task/XXvtAa1cMtYT2OpXFPif7He4zLr1.json?auth=eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg4ZGYxMzgwM2I3NDM2NjExYWQ0ODE0NmE4ZGExYjA3MTg2ZmQxZTkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcHJpbWVzdG9uZXByb2plY3QiLCJhdWQiOiJwcmltZXN0b25lcHJvamVjdCIsImF1dGhfdGltZSI6MTYyNDY0NjA0MCwidXNlcl9pZCI6IlhYdnRBYTFjTXRZVDJPcFhGUGlmN0hlNHpMcjEiLCJzdWIiOiJYWHZ0QWExY010WVQyT3BYRlBpZjdIZTR6THIxIiwiaWF0IjoxNjI0NjQ2MDQwLCJleHAiOjE2MjQ2NDk2NDAsImVtYWlsIjoiZGJ2MDQxMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZGJ2MDQxMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Gf7JXv0CX2oLx_DIdSAcHfPB1s_CVwLyyICpAXujefvYYhEWIpKHF5n9CzcxJY7NmW6DEX_ATvqJn9jhX2TYLKhruzYybOJnGVG_GJ9-hgGfm25hHWvE7hBvgrGE33i7UQzr8PR6Zkb-8p3uxQD2hffs7kfYdPLyN0ggkQg8roKh8asYu6QQnRdtXkEWzDr5TBvCgPSnIIHfYyb21p7_URUy9yHZYgKuUAtbfy_lG8rVthiYUlERrIzoHWVjy3GWTWsALnRwZQLeh4hkIyjOzz-Qm9lo7xE9c-fq2of879u_yiVrR_tPOd0cKJZnr0edSBCq-AWslJ8Aej4dos2imQ",
+					"protocol": "https",
+					"host": [
+						"primestoneproject-default-rtdb",
+						"firebaseio",
+						"com"
+					],
+					"path": [
+						"task",
+						"XXvtAa1cMtYT2OpXFPif7He4zLr1.json"
+					],
+					"query": [
+						{
+							"key": "auth",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg4ZGYxMzgwM2I3NDM2NjExYWQ0ODE0NmE4ZGExYjA3MTg2ZmQxZTkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcHJpbWVzdG9uZXByb2plY3QiLCJhdWQiOiJwcmltZXN0b25lcHJvamVjdCIsImF1dGhfdGltZSI6MTYyNDY0NjA0MCwidXNlcl9pZCI6IlhYdnRBYTFjTXRZVDJPcFhGUGlmN0hlNHpMcjEiLCJzdWIiOiJYWHZ0QWExY010WVQyT3BYRlBpZjdIZTR6THIxIiwiaWF0IjoxNjI0NjQ2MDQwLCJleHAiOjE2MjQ2NDk2NDAsImVtYWlsIjoiZGJ2MDQxMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZGJ2MDQxMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Gf7JXv0CX2oLx_DIdSAcHfPB1s_CVwLyyICpAXujefvYYhEWIpKHF5n9CzcxJY7NmW6DEX_ATvqJn9jhX2TYLKhruzYybOJnGVG_GJ9-hgGfm25hHWvE7hBvgrGE33i7UQzr8PR6Zkb-8p3uxQD2hffs7kfYdPLyN0ggkQg8roKh8asYu6QQnRdtXkEWzDr5TBvCgPSnIIHfYyb21p7_URUy9yHZYgKuUAtbfy_lG8rVthiYUlERrIzoHWVjy3GWTWsALnRwZQLeh4hkIyjOzz-Qm9lo7xE9c-fq2of879u_yiVrR_tPOd0cKJZnr0edSBCq-AWslJ8Aej4dos2imQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"dbv0410@hotmail.com\",\r\n    \"password\": \"654321\",\r\n    \"returnSecureToken\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD9J8xkrfZ_7sX5Gn9bMWUxKLm9jFqTRXU",
+					"protocol": "https",
+					"host": [
+						"identitytoolkit",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"accounts:signUp"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "AIzaSyD9J8xkrfZ_7sX5Gn9bMWUxKLm9jFqTRXU"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"dbv0410@hotmail.com\",\r\n    \"password\":\"654321\",\r\n    \"returnSecureToken\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyD9J8xkrfZ_7sX5Gn9bMWUxKLm9jFqTRXU",
+					"protocol": "https",
+					"host": [
+						"identitytoolkit",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"accounts:signInWithPassword"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "AIzaSyD9J8xkrfZ_7sX5Gn9bMWUxKLm9jFqTRXU"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
