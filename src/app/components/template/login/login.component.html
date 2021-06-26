@@ -1,23 +1,19 @@
 
 <div class="wrapper fadeInDown">
     <div id="formContent">
+      <h4 class="pt-2">Sign in</h4>
       <form (submit)="logIn($event)" >
-        
-
-        <div class="form-group pt-4 pl-4 pr-4 m-0 fadeIn first">
+        <div class="form-group pt-2 pl-4 pr-4 m-0 fadeIn first">
             <label for="email">Email address</label>
             <input (input)="emailInput($event.target.value)" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-
         <div class="form-group pt-2 pl-4 pr-4 m-0 fadeIn second">
             <label for="exampleInputEmail1">Password</label>
             <input (input)="passwordInput($event.target.value)" type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter password" required>
-            
         </div>
-
         <button class="btn btn-primary mt-2 mb-2 pl-5 pr-5 fadeIn third">LOG IN</button>
-        <p routerLink="/signin" routerLinkActive="active" class="fadeIn fourth" style="cursor: pointer" class="text-primary">Sig in</p>
+        <p routerLink="/signup" routerLinkActive="active" class="fadeIn fourth" style="cursor: pointer" class="text-primary">Sig up</p>
       </form>
   
     </div>

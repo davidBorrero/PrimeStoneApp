@@ -14,9 +14,10 @@ import { TaskManagementComponent } from './components/template/task-management/t
 import { SigninComponent } from './components/template/signin/signin.component';
 
 const routes: Routes =[
-  {path: 'login', component: LoginComponent},
-  {path: 'signin', component: SigninComponent},
-  {path: '',   redirectTo: 'login', pathMatch: 'full'},
+  {path: 'signin', component: LoginComponent},
+  {path: 'signup', component: SigninComponent},
+  {path: 'taskManager', component: TaskManagementComponent},
+  {path: '',   redirectTo: 'signin', pathMatch: 'full'},
 ]
 
 
